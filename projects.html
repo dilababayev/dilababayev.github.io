@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AP CSA Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background: #f8f9fa;
+      color: #212529;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .project {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #34495e;
+    }
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: "Courier New", Courier, monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>AP CSA Projects & Exercises</h1>
+
+  <div class="project">
+    <h2>1. Swap Two Integers</h2>
+    <p><strong>Description:</strong> Write a program that swaps the values of two integers without using a third variable.</p>
+    <pre><code class="language-java">
+// Swap.java
+public class Swap {
+    public static void main(String[] args) {
+        int a = 5, b = 10;
+        System.out.println("Before: a = " + a + ", b = " + b);
+
+        // Swap logic
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("After: a = " + a + ", b = " + b);
+    }
+}
+    </code></pre>
+  </div>
+
+  <div class="project">
+    <h2>2. Boolean Logic Puzzle</h2>
+    <p><strong>Description:</strong> Evaluate whether <code>(true &amp;&amp; false) || (true || false)</code> is true or false.</p>
+    <p><strong>Solution:</strong> <code>(true && false)</code> is false, <code>(true || false)</code> is true → so the whole expression is <code>false || true = true</code>.</p>
+  </div>
+
+  <div class="project">
+    <h2>3. Division by Zero</h2>
+    <p><strong>Description:</strong> What happens when you divide an integer by zero in Java?</p>
+    <p><strong>Solution:</strong> It throws an <code>ArithmeticException</code>. For doubles, dividing by zero gives <code>Infinity</code> or <code>NaN</code>.</p>
+  </div>
+
+</body>
+</html>
 
